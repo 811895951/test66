@@ -72,7 +72,7 @@
         }
         
         .small-box {
-            width: 160px;
+            width: 200px;
             height: 25px;
             border: 1px solid #ccc;
             margin-right: 5px;
@@ -80,8 +80,20 @@
             background: white;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            padding-right: 8px;
+            justify-content: flex-start;
+            padding: 0 8px;
+            position: relative;
+        }
+        
+        .placeholder-text {
+            color: #999;
+            font-size: 0.75rem;
+            opacity: 0.6;
+            flex-grow: 1;
+        }
+        
+        .search-icon {
+            margin-left: auto;
         }
         
         .subtitle {
@@ -224,10 +236,11 @@
         <header>
             <div class="search-container" onclick="window.open('https://yandex.com', '_blank')">
                 <div class="small-box">
+                    <span class="placeholder-text">铜人、韩国女主播、瓜...</span>
                     <span class="search-icon">🔍</span>
                 </div>
             </div>
-            <h1>👆深夜福利在这搜</h1>
+            <h1>👆福利资源你懂的😍</h1>
             <p class="subtitle">本站由AI收集自网络，仅供学习参考</p>
         </header>
         
