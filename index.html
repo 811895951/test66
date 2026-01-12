@@ -267,60 +267,56 @@
             { name: "漫画", url: "#comic" },
             { name: "软件", url: "#tools" },
             { name: "游戏", url: "#games" },
-            { name: "小说", url: "#novel" },
-            
+            { name: "小说", url: "#novel" }
         ];
         
-        // 热门应用 - 只需要在这里维护热门应用，它们会自动归类到对应分类
+        // 热门应用
         const featuredApps = (() => {
             return [
                 {
                     name: "小城大事(已更新)",
                     desc: "热播剧",
-                    url: "https://www.fzmmx.com/album/xiaochengdashi-1-1.html",
-                    category: "影视"
+                    url: "https://www.fzmmx.com/album/xiaochengdashi-1-1.html"
                 },
                 {
                     name: "轧戏(已更新)",
                     desc: "热播剧",
-                    url: "http://www.hemayy.com/html/468530.html",
-                    category: "影视"
+                    url: "http://www.hemayy.com/html/468530.html"
+                },
+                {
+                    name: "秋雪漫过的冬天",
+                    desc: "热播剧",
+                    url: "https://www.hemayy.com/html/468695.html"
                 },
                 {
                     name: "春日狂热(已更新)",
                     desc: "热播剧",
-                    url: "https://m.wosososo.com/vod/197352.html",
-                    category: "影视"
+                    url: "https://m.wosososo.com/vod/197352.html"
+                },
+                {
+                    name: "剑来第二季",
+                    desc: "热播剧",
+                    url: "https://www.hemayy.com/html/465132.html"
+                },
+                {
+                    name: "老街赵凤声",
+                    desc: "热播剧",
+                    url: "https://www.hemayy.com/html/466743.html"
+                },
+                {
+                    name: "玉茗茶骨",
+                    desc: "热播剧",
+                    url: "https://www.hemayy.com/html/465731.html"
+                },
+                {
+                    name: "荣华令",
+                    desc: "热播剧",
+                    url: "https://www.hemayy.com/html/467338.html"
                 },
                 {
                     name: "我在末世开超市，S级诡异抢着来上班",
                     desc: "热播剧",
-                    url: "https://t.douxx1.com/vsliupy/222083-1-1.html",
-                    category: "影视"
-                },
-                {
-                    name: "看剧网站1",
-                    desc: "热播剧短剧动漫",
-                    url: "https://www.hemayy.com/",
-                    category: "影视"
-                },
-                {
-                    name: "看剧网站2",
-                    desc: "在线看",
-                    url: "https://m.wosososo.com/",
-                    category: "影视"
-                },
-                {
-                    name: "看剧网站3",
-                    desc: "热播剧短剧动漫",
-                    url: "http://yijiexiaomin.com/zixun/2.html",
-                    category: "影视"
-                },
-                {
-                    name: "看剧网站4",
-                    desc: "在线看",
-                    url: "http://bbs.0910jzw.com/",
-                    category: "影视"
+                    url: "https://t.douxx1.com/vsliupy/222083-1-1.html"
                 }
             ];
         })();
@@ -328,7 +324,26 @@
         // 影视类应用
         const videoApps = (() => {
             return [
-
+                {
+                    name: "看剧网站1",
+                    desc: "热播剧短剧动漫",
+                    url: "https://www.hemayy.com/"
+                },
+                {
+                    name: "看剧网站2",
+                    desc: "在线看",
+                    url: "https://m.wosososo.com/"
+                },
+                {
+                    name: "看剧网站3",
+                    desc: "热播剧短剧动漫",
+                    url: "http://yijiexiaomin.com/zixun/2.html"
+                },
+                {
+                    name: "看剧网站4",
+                    desc: "在线看",
+                    url: "http://bbs.0910jzw.com/"
+                }
             ];
         })();
         
@@ -338,20 +353,17 @@
                 {
                     name: "动漫网站1",
                     desc: "国产欧美日本",
-                    url: "https://www.lmm50.com/",
-                    category: "动漫"
+                    url: "https://www.lmm50.com/"
                 },
                 {
                     name: "动漫网站2",
                     desc: "国产欧美日本",
-                    url: "https://iknice.com/",
-                    category: "动漫"
+                    url: "https://iknice.com/"
                 },
                 {
                     name: "动漫网站3",
                     desc: "国产欧美日本",
-                    url: "https://www.yinghua14.com/",
-                    category: "动漫"
+                    url: "https://www.yinghua14.com/"
                 }
             ];
         })();
@@ -362,14 +374,12 @@
                 {
                     name: "漫画网站1",
                     desc: "韩漫日漫",
-                    url: "https://cn.baozimhcn.com/",
-                    category: "漫画"
+                    url: "https://cn.baozimhcn.com/"
                 },
                 {
                     name: "漫画网站2",
                     desc: "国漫",
-                    url: "https://n.telltome.net/",
-                    category: "漫画"
+                    url: "https://n.telltome.net/"
                 },
             ];
         })();
@@ -380,8 +390,7 @@
                 {
                     name: "小说在线搜索",
                     desc: "长篇短篇",
-                    url: "http://m.soduzw.com/",
-                    category: "小说"
+                    url: "http://m.soduzw.com/"
                 }
             ];
         })();
@@ -392,38 +401,32 @@
                 {
                     name: "影视仓",
                     desc: "APP手机电视通用",
-                    url: "https://pan.xunlei.com/s/VObuMWnTCvio-U_cXN5xgJCQA1?pwd=98ec",
-                    category: "软件"
+                    url: "https://pan.xunlei.com/s/VObuMWnTCvio-U_cXN5xgJCQA1?pwd=98ec"
                 },
                 {
                     name: "TVBox",
                     desc: "APP手机电视通用",
-                    url: "https://pan.xunlei.com/s/VObuMWnTCvio-U_cXN5xgJCQA1?pwd=98ec",
-                    category: "软件"
+                    url: "https://pan.xunlei.com/s/VObuMWnTCvio-U_cXN5xgJCQA1?pwd=98ec"
                 },
                 {
                     name: "人人视频",
                     desc: "APP手机版",
-                    url: "https://pan.xunlei.com/s/VObuMWnTCvio-U_cXN5xgJCQA1?pwd=98ec",
-                    category: "软件"
+                    url: "https://pan.xunlei.com/s/VObuMWnTCvio-U_cXN5xgJCQA1?pwd=98ec"
                 },
                 {
                     name: "看片工具合集",
                     desc: "追剧动漫漫画软件合集",
-                    url: "https://pan.xunlei.com/s/VOd7_-EesTOhqcUpQXUvye6dA1?pwd=a9j4#",
-                    category: "软件"
+                    url: "https://pan.xunlei.com/s/VOd7_-EesTOhqcUpQXUvye6dA1?pwd=a9j4#"
                 },
                 {
                     name: "AI抠图",
                     desc: "电脑本地AI抠图",
-                    url: "https://pan.xunlei.com/s/VOd7ZDbIMyxUAk_jY1j3F6w2A1?pwd=ax64#",
-                    category: "软件"
+                    url: "https://pan.xunlei.com/s/VOd7ZDbIMyxUAk_jY1j3F6w2A1?pwd=ax64#"
                 },
                 {
                     name: "AI变声器",
                     desc: "手机平板电脑",
-                    url: "https://pan.xunlei.com/s/VObuK42Bl-jZHH1FBHfeQirTA1?pwd=2e6r#",
-                    category: "软件"
+                    url: "https://pan.xunlei.com/s/VObuK42Bl-jZHH1FBHfeQirTA1?pwd=2e6r#"
                 }
             ];
         })();
@@ -434,15 +437,13 @@
                 {
                     name: "游戏合集",
                     desc: "手机电脑单机游戏",
-                    url: "https://pan.xunlei.com/s/VOd7W3tTRzNzBuNq7ZJFPgO3A1?pwd=mc65#",
-                    category: "游戏"
+                    url: "https://pan.xunlei.com/s/VOd7W3tTRzNzBuNq7ZJFPgO3A1?pwd=mc65#"
                 }
             ];
         })();
         
-        // 合并所有应用（包含热门应用和分类应用）
-        const allApps = [
-            ...featuredApps,
+        // 合并所有非热门应用
+        const allNonFeaturedApps = [
             ...videoApps,
             ...animeApps,
             ...comicApps,
@@ -453,11 +454,26 @@
         
         // 获取指定分类的应用
         const getAppsWithCategory = (category) => {
-            return allApps.filter(app => app.category === category);
+            switch(category) {
+                case '影视':
+                    return videoApps;
+                case '动漫':
+                    return animeApps;
+                case '漫画':
+                    return comicApps;
+                case '小说':
+                    return novelApps;
+                case '软件':
+                    return softwareApps;
+                case '游戏':
+                    return gameApps;
+                default:
+                    return [];
+            }
         };
         
-        // 所有应用
-        const apps = allApps;
+        // 所有应用（仅非热门应用）
+        const apps = allNonFeaturedApps;
         
         const categoriesList = document.getElementById('categoriesList');
         const appsGrid = document.getElementById('appsGrid');
