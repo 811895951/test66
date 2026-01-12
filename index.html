@@ -48,6 +48,40 @@
             font-size: 1.3rem;
             margin-bottom: 8px;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-icon {
+            margin-left: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+        
+        .search-icon:hover {
+            transform: scale(1.2);
+        }
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        
+        .small-box {
+            width: 160px;
+            height: 25px;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+            border-radius: 10px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 8px;
         }
         
         .subtitle {
@@ -188,13 +222,16 @@
 <body>
     <div class="container">
         <header>
-            <h1>资源导航站</h1>
+            <div class="search-container" onclick="window.open('https://yandex.com', '_blank')">
+                <div class="small-box">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+            <h1>👆深夜福利在这搜</h1>
             <p class="subtitle">本站由AI收集自网络，仅供学习参考</p>
         </header>
         
-        <!-- <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="搜索应用或资源..." autocomplete="off">
-        </div> -->
+        
         
         <div class="categories" id="categoriesList">
             <!-- 分类将通过JavaScript动态生成 -->
